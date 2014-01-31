@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cinch/note/version'
+require 'cinch/plugins/notes/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cinch-note"
-  spec.version       = Cinch::Note::VERSION
+  spec.name          = "cinch-notes"
+  spec.version       = Cinch::Plugins::Notes::VERSION
   spec.authors       = ["Brian Haberer"]
   spec.email         = ["bhaberer@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{A cinch plugin to allow leaving other users notes.}
+  spec.summary       = %q{Cinch Notes Plugin}
+  spec.homepage      = "https://github.com/bhaberer/cinch-note"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,4 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+
+  spec.add_dependency             'cinch-toolbox'
+  spec.add_dependency             'cinch-storage'
 end
