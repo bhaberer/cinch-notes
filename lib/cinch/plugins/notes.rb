@@ -15,7 +15,7 @@ module Cinch::Plugins
 
     def initialize(*args)
       super
-      @storage = CinchStorage.new('yaml/notes.yml')
+      @storage = CinchStorage.new(config[:filename] || 'yaml/notes.yml')
       @storage.data ||= {}
     end
 
