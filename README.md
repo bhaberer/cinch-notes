@@ -1,6 +1,12 @@
 # Cinch::Note
 
-TODO: Write a gem description
+[![Gem Version](https://badge.fury.io/rb/cinch-notes.png)](http://badge.fury.io/rb/cinch-notes)
+[![Dependency Status](https://gemnasium.com/bhaberer/cinch-notes.png)](https://gemnasium.com/bhaberer/cinch-notes)
+[![Build Status](https://travis-ci.org/bhaberer/cinch-notes.png?branch=master)](https://travis-ci.org/bhaberer/cinch-notes)
+[![Coverage Status](https://coveralls.io/repos/bhaberer/cinch-notes/badge.png?branch=master)](https://coveralls.io/r/bhaberer/cinch-notes?branch=master)
+[![Code Climate](https://codeclimate.com/github/bhaberer/cinch-notes.png)](https://codeclimate.com/github/bhaberer/cinch-notes)
+
+Cinch plugin to allow users to leave notes for one another.
 
 ## Installation
 
