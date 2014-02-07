@@ -1,4 +1,4 @@
-# Cinch::Note
+# Cinch::Plugins::Notes
 
 [![Gem Version](https://badge.fury.io/rb/cinch-notes.png)](http://badge.fury.io/rb/cinch-notes)
 [![Dependency Status](https://gemnasium.com/bhaberer/cinch-notes.png)](https://gemnasium.com/bhaberer/cinch-notes)
@@ -12,7 +12,7 @@ Cinch plugin to allow users to leave notes for one another.
 
 Add this line to your application's Gemfile:
 
-    gem 'cinch-note'
+    gem 'cinch-notes'
 
 And then execute:
 
@@ -20,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install cinch-note
+    $ gem install cinch-notes
 
 ## Usage
 
