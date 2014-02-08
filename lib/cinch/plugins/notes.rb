@@ -37,6 +37,7 @@ module Cinch::Plugins
             note.mark_sent
           end
         end
+        @storage.synced_save(@bot)
       end
     end
   end
