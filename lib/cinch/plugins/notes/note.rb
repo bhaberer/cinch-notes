@@ -13,10 +13,6 @@ module Cinch::Plugins
         @time = Time.now
       end
 
-      def to_yaml
-        { from: from, to: to, message: message, time: time, sent: sent }
-      end
-
       def mark_sent
         @sent = true
       end
