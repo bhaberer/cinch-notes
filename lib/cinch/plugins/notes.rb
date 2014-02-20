@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 require 'cinch'
-require 'cinch-storage'
+require 'cinch/storage'
 
 module Cinch::Plugins
   # Cinch Plugin to send notes
@@ -16,7 +16,7 @@ module Cinch::Plugins
 
     def initialize(*args)
       super
-      @storage = CinchStorage.new(config[:filename] || 'yaml/notes.yml')
+      @storage = Cinch::Storage.new(config[:filename] || 'yaml/notes.yml')
       @storage.data ||= {}
     end
 
