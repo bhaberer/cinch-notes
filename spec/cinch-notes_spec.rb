@@ -9,14 +9,14 @@ describe Cinch::Plugins::Notes do
 
   describe 'handling hangout links' do
     it 'should accept a message to give to someone later' do
-      get_replies(make_message(@bot, 'tell foo bar'), :private).first.text.
-        should == "ok, I will let them know!"
+      msg = get_replies(make_message(@bot, 'tell foo bar'), :private).first
+      expect(msg.text).to eq('ok, I will let them know!')
     end
 
     it 'should send the message when someone talks later' do
       get_replies(make_message(@bot, 'tell joe bar'), :private)
-      get_replies(make_message(@bot, 'hi', { nick: 'joe', channel: '#foo' })).first.text.
-        should == "test asked me to tell you 'bar'"
+      msg = get_replies(make_message(@bot, 'hi', { nick: 'joe', channel: '#foo' })).first
+      expect(msg.text).to eq('test asked me to tell you \'bar\'')
     end
   end
 end
